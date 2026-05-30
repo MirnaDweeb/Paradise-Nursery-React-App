@@ -2,69 +2,52 @@ import React from 'react';
 
 export default function AboutUs() {
   return (
-    <div className="about">
-      <div className="about-hero">
-        <div className="about-hero-image">
-          <img
-            src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=800&auto=format&fit=crop&q=80"
-            alt="Lush plant nursery"
-          />
-        </div>
-        <div>
-          <span className="about-tag">Our Story</span>
-          <h1>Rooted in a love for living things</h1>
-          <p className="about-lead">
-            Paradise Nursery began as a small family greenhouse tucked between rolling hills. 
-            Today it's a thriving community built around one shared belief: plants make life better.
-          </p>
-          <p className="about-lead">
-            We carefully source every plant we sell — from sun-drenched succulents to 
-            lush tropical foliage — and pair each one with the expertise to help it thrive in your home.
-          </p>
-        </div>
-      </div>
+    <div className="about-us-container">
+      <h1>About Paradise Nursery</h1>
 
-      <h2 className="about-section-title">What We Stand For</h2>
-      <div className="about-cards">
-        {[
-          {
-            icon: '🌿',
-            title: 'Our Mission',
-            text: 'To make the joy of plants accessible to everyone. Whether you\'re a first-time plant parent or a seasoned botanist, we have something green waiting for you.'
-          },
-          {
-            icon: '🌱',
-            title: 'Our Vision',
-            text: 'A world where every home has a corner of nature. We envision greener cities, calmer homes, and cleaner air — one plant at a time.'
-          },
-          {
-            icon: '🏡',
-            title: 'Indoor Plants',
-            text: 'Monstera, peace lily, pothos — our indoor collection transforms your living space into a breathing, vibrant sanctuary that improves air quality and mental wellbeing.'
-          },
-          {
-            icon: '☀️',
-            title: 'Outdoor Plants',
-            text: 'From hardy perennials to flowering shrubs, our outdoor range brings colour and life to patios, gardens, and balconies through every season.'
-          },
-          {
-            icon: '🌵',
-            title: 'Succulents',
-            text: 'Perfect for busy plant lovers. Our succulent collection demands little and gives back beauty, texture, and zen-like calm in return.'
-          },
-          {
-            icon: '♻️',
-            title: 'Sustainability',
-            text: 'We grow using organic practices, ship in 100% recyclable packaging, and donate 2% of every sale to urban greening initiatives worldwide.'
-          },
-        ].map((card) => (
-          <div className="about-card" key={card.title}>
-            <div className="about-card-icon">{card.icon}</div>
-            <h3>{card.title}</h3>
-            <p>{card.text}</p>
-          </div>
-        ))}
-      </div>
+      <p>
+        Welcome to Paradise Nursery, your trusted destination for beautiful
+        indoor plants, outdoor plants, and succulents. We are passionate
+        about helping people bring nature into their homes and gardens.
+      </p>
+
+      <p>
+        Our mission is to make gardening simple, enjoyable, and accessible
+        to everyone. We provide high-quality plants, expert guidance, and
+        excellent customer service to support plant lovers of all experience levels.
+      </p>
+
+      <p>
+        At Paradise Nursery, we carefully select healthy plants that can
+        thrive in different environments. Whether you are looking for
+        decorative indoor plants, colorful outdoor plants, or low-maintenance
+        succulents, we have something for every space.
+      </p>
+
+      <p>
+        We believe that plants improve well-being, create healthier living
+        environments, and add beauty to everyday life. Our goal is to help
+        every customer build their own green sanctuary.
+      </p>
+
+      <h2>Our Mission</h2>
+      <p>
+        To provide high-quality plants and gardening solutions while
+        promoting sustainable and eco-friendly living.
+      </p>
+
+      <h2>Our Vision</h2>
+      <p>
+        To inspire people around the world to connect with nature and create
+        greener homes, workplaces, and communities.
+      </p>
+
+      <h2>Our Products</h2>
+      <p>
+        We offer a wide selection of indoor plants, outdoor plants,
+        succulents, tropical plants, flowering plants, and gardening
+        accessories to meet the needs of every plant enthusiast.
+      </p>
     </div>
   );
 }
