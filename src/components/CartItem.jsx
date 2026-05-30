@@ -23,28 +23,28 @@ export default function CartItem({ item }) {
     <div className="cart-item">
 
       <img
-        className="cart-item-image"
         src={item.image}
         alt={item.name}
+        className="cart-item-image"
       />
 
       <div className="cart-item-info">
-        <div className="cart-item-name">{item.name}</div>
+        <h3 className="cart-item-name">{item.name}</h3>
 
-        <div className="cart-item-price">
-          ${item.price.toFixed(2)} each
-        </div>
+        <p className="cart-item-price">
+          Price: ${item.price}
+        </p>
 
-        {/* quantity controls */}
+        {/* REQUIRED CONTROLS */}
         <div className="cart-item-controls">
-          <button className="qty-btn" onClick={decrease}>−</button>
+          <button onClick={decrease} className="qty-btn">-</button>
           <span className="qty-value">{item.quantity}</span>
-          <button className="qty-btn" onClick={increase}>+</button>
+          <button onClick={increase} className="qty-btn">+</button>
         </div>
       </div>
 
       <div className="cart-item-right">
-        {/* REQUIRED total per item */}
+        {/* REQUIRED TOTAL */}
         <div className="cart-item-total">
           ${(item.price * item.quantity).toFixed(2)}
         </div>
